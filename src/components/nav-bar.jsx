@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Navbar, Form, FormControl, Button, Col, Row } from "react-bootstrap";
-import { Basket } from "./logo";
-import Text from "./text";
-import "../app.css";
+import { Navbar, Col } from "react-bootstrap";
+import Profile from "./profile";
+import SearchBar from "./search-bar";
+import MainLogo from "./navbar-logo";
 
 class TopNav extends Component {
   navStyle = {
@@ -11,32 +11,17 @@ class TopNav extends Component {
 
   render() {
     return (
-      <Navbar bg="light" expand="md">
-        <Col md={3}>
-          <Navbar.Brand href="#home" className="text-primary col-lg-3">
-            BigBasket
-          </Navbar.Brand>
-        </Col>
-        <Col md={6}>
-          <Form inline>
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className="mr-sm-2"
-              style={{ width: "60%" }}
-            />
-            <Button variant="outline-primary">Search</Button>
-          </Form>
+      <Navbar bg="light" expand="md" className="shadow py-2 px-1">
+        <Col md={2} className="d-flex align-items-center">
+          <MainLogo brand="Broom" />
         </Col>
 
-        <Col md={3}>
-          <Row>
-            <Basket className="align-self-center" />
-            <Col>
-              <Text text="Cart" />
-              <Text text="0 items in your card" className="d-block" />
-            </Col>
-          </Row>
+        <Col md={8}>
+          <SearchBar />
+        </Col>
+
+        <Col md={2} className="d-flex justify-content-end align-items-center">
+          <Profile />
         </Col>
       </Navbar>
     );

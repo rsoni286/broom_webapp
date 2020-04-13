@@ -4,18 +4,3 @@
   --primary-light-color: #d500f9;
   --accent-color: #03dac5;
 }
-
-.text-main {
-  color: var(--primary-color);
-}
-
-.text-main-dark {
-  color: var(--primary-dark-color);
-}
-
-.text-main-light {
-  color: var(--primary-light-color);
-}
-.text-accent {
-  color: var(--accent-color);
-}

@@ -7,18 +7,25 @@ class Text extends Component {
 
   getElement() {
     const { textType, color, text } = this.props;
-    const className =
-      "d-inline px-2 m-0 align-middle text-" +
-      color +
-      " " +
-      this.props.className;
+
+    let className = "px-2 m-0 align-middle ";
+    const colorClass = "text-" + (color || "black");
+    const otherClasses = " " + (this.props.className || "");
+
+    className = className + colorClass + otherClasses;
 
     if (textType === "title") {
       return <h4 className={className}>{text}</h4>;
     } else if (textType === "sub-title") {
       return <h5 className={className}>{text}</h5>;
+    } else if (textType === "desc") {
+      return <h6 className={className}>{text}</h6>;
     } else {
-      return <span className={className}>{text}</span>;
+      return (
+        <p className={className} style={{ fontSize: "14px" }}>
+          {text}
+        </p>
+      );
     }
   }
 }
