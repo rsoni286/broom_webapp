@@ -4,6 +4,14 @@ $theme-colors: (
   "accent": #03dac5,
   "primary-dark": #5f0077,
 );
+$sizes: (
+  60: 60%,
+);
+
+.right-rounded {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
 
 $border-radius: 0.6rem !default;
 $border-radius-lg: 0.4rem !default;

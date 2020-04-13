@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Text from "./text";
-import { GetIn } from "./logo";
+import { GetIn } from "./icons";
 
 class Profile extends Component {
   render() {

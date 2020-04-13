@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BroomLogo } from "./logo";
+import { BroomLogo } from "./icons";
 import { Navbar } from "react-bootstrap";
 
 class MainLogo extends Component {
