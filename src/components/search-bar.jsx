@@ -11,16 +11,22 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <Form inline className="justify-content-center  my-3 my-md-0">
+      <Form
+        inline
+        className="justify-content-center  my-3 my-md-0"
+        action="https://www.facebook.com/"
+      >
         <div class="input-group px-0 col-md-10 col-12">
           <FormControl type="text" placeholder={this.props.hint} />
 
           <div class="input-group-append d-none d-md-block">
-            <Button style={this.style}>Search</Button>
+            <Button type="submit" style={this.style}>
+              Search
+            </Button>
           </div>
 
           <div class="input-group-append d-block d-md-none">
-            <Button>
+            <Button type="submit">
               <SearchIcon />
             </Button>
           </div>

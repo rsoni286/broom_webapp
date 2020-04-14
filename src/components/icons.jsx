@@ -32,8 +32,8 @@ export const GetIn = () => {
   return (
     <svg
       class="bi bi-box-arrow-in-right"
-      width="1.5em"
-      height="1.5em"
+      width="1.2em"
+      height="1.2em"
       viewBox="0 0 16 16"
       fill="#9e00c5"
       xmlns="http://www.w3.org/2000/svg"
