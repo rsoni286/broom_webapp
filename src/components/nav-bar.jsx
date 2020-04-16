@@ -6,14 +6,10 @@ import MainLogo from "./navbar-logo";
 import Cart from "./cart";
 
 class TopNav extends Component {
-  navStyle = {
-    width: 100,
-  };
-
   render() {
     return (
       <Navbar bg="light" expand="md" className="shadow py-2 px-1">
-        <Col xs={5} md={2} className="d-flex align-items-center ">
+        <Col xs={5} md={3} className="d-flex align-items-center ">
           <MainLogo brand="Broom" />
         </Col>
 
@@ -25,7 +21,7 @@ class TopNav extends Component {
           <Profile />
         </Col>
 
-        <Col md={6}>
+        <Col md={5}>
           <SearchBar hint="Search market" />
         </Col>
 

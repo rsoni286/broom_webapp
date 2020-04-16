@@ -15,14 +15,30 @@ class Text extends Component {
     className = className + colorClass + otherClasses;
 
     if (textType === "title") {
-      return <h4 className={className}>{text}</h4>;
+      return (
+        <h4 onClick={this.props.onClick} className={className}>
+          {text}
+        </h4>
+      );
     } else if (textType === "sub-title") {
-      return <h5 className={className}>{text}</h5>;
+      return (
+        <h5 onClick={this.props.onClick} className={className}>
+          {text}
+        </h5>
+      );
     } else if (textType === "desc") {
-      return <h6 className={className}>{text}</h6>;
+      return (
+        <h6 onClick={this.props.onClick} className={className}>
+          {text}
+        </h6>
+      );
     } else {
       return (
-        <p className={className} style={{ fontSize: "14px" }}>
+        <p
+          onClick={this.props.onClick}
+          className={className}
+          style={{ fontSize: "14px" }}
+        >
           {text}
         </p>
       );

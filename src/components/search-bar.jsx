@@ -16,16 +16,16 @@ class SearchBar extends Component {
         className="justify-content-center  my-3 my-md-0"
         action="https://www.facebook.com/"
       >
-        <div class="input-group px-0 col-md-10 col-12">
+        <div className="input-group px-0 col-md-10 col-12">
           <FormControl type="text" placeholder={this.props.hint} />
 
-          <div class="input-group-append d-none d-md-block">
+          <div className="input-group-append d-none d-md-block">
             <Button type="submit" style={this.style}>
               Search
             </Button>
           </div>
 
-          <div class="input-group-append d-block d-md-none">
+          <div className="input-group-append d-block d-md-none">
             <Button type="submit">
               <SearchIcon />
             </Button>

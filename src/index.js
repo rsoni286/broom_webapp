@@ -1,12 +1,7 @@
-import React from "react";
 import ReactDOM from "react-dom";
-import TopNav from "./components/nav-bar";
+import React from "react";
 import "./main.scss";
 import "./app.css";
+import AppComponent from "./app";
 
-const mainElement = (
-  <React.Fragment>
-    <TopNav />
-  </React.Fragment>
-);
-ReactDOM.render(mainElement, document.getElementById("root"));
+ReactDOM.render(<AppComponent />, document.getElementById("root"));
