@@ -1,6 +1,6 @@
 import React from "react";
-import TopNav from "./components/nav-bar";
-import Route from "./components/route";
+import TopNav from "./components/elements/nav-bar";
+import Route from "./components/elements/route";
 
 const AppComponent = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import CatSideBar from "../category-bar";
-import ShopFeed from "../feed";
+import CatSideBar from "../elements/category-bar";
+import ShopFeed from "../elements/feed";
 
 const HomeLayout = () => {
   const categories = [
@@ -28,10 +28,10 @@ const HomeLayout = () => {
   return (
     <Container className="p-0 m-0" fluid>
       <Row>
-        <Col md={3} className="pr-2 d-none d-md-block">
+        <Col md={3} className="pt-1 pr-2 d-none d-md-block">
           <CatSideBar categories={categories} />
         </Col>
-        <Col xs={12} md={9} className="p-2">
+        <Col xs={12} md={9} className="d-block pl-3 pl-md-1 pr-3 py-2">
           <ShopFeed />
         </Col>
       </Row>

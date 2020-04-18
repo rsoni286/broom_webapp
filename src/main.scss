@@ -64,3 +64,18 @@ $list-group-hover-bg: #de8ff26b;
   overflow: hidden;
   overflow-y: scroll;
 }
+
+.shop-slider {
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+}
+
+.shop-slide {
+  min-width: 100%;
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 0.6rem;
+}

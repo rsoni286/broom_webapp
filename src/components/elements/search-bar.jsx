@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
 import { SearchIcon } from "./icons";
-import "../app.css";
+import "../../app.css";
 
 class SearchBar extends Component {
   style = {

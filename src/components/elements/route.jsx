@@ -1,5 +1,5 @@
 import React from "react";
-import HomeLayout from "./pages/home";
+import HomeLayout from "../pages/home";
 
 const Route = () => {
   return <HomeLayout />;
